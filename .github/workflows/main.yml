@@ -14,8 +14,8 @@ jobs:
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       # Test Variable inside Docker Container - Public IP
-      - name: Get the output $MYIP
-        run: echo "Public IP: ${{ steps.hello.outputs.myip }}"
+      - name: Get the output Public IP
+        run: echo "Public IP ${{ steps.hello.outputs.myip }}"
       # Test Variable git branch
       - name: Get the output branch name
         run: echo Branch execution ${GITHUB_REF##*/}
