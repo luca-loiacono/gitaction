@@ -15,7 +15,7 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       # Test Variable inside Docker Container - Public IP
       - name: Get the output Public IP
-        run: curl ifconfig.me 
+        run: curl -s ifconfig.me 
       # Test Variable git branch
       - name: Get the output branch name
         run: echo Branch execution ${GITHUB_REF##*/}
