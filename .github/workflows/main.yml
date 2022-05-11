@@ -15,4 +15,4 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       # Test Variable git branch
       - name: Get the output branch name
-        run: echo "Branch execution: $GITHUB_REF"
+        run: echo Branch execution $GITHUB_REF
