@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
-myip=$(curl ifconfig.me)
+myip=$(uname -r)
+#myip=$(curl ifconfig.me)
 
 echo "Hello $1"
 time=$(date)
